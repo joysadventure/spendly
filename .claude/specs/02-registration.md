@@ -1,7 +1,7 @@
 # Spec: Registration
 
 ## Overview
-Adds account creation to Spendly by implementing the `POST /register` handler. Users can already reach the registration form (`GET /register` renders `register.html`, which already POSTs to `/register`), but there is no backend logic to validate input, hash the password, or insert the new user. On success the user is shown a success message and then redirected to the login page. This is the entry point for all authenticated features that follow (login, profile, expenses).
+Adds account creation to Spendly by implementing the `POST /register` handler. Users can already reach the registration form (`GET /register` renders `register.html`, which already POSTs to `/register`), but there is no backend logic to validate input, hash the password, or insert the new user. On success the user is shown with a success message and then redirected to the login page. This is the entry point for all authenticated features that follow (login, profile, expenses).
 
 ## Depends on
 Step 1 — Database Setup (`.claude/specs/01-database-setup.md`). Requires `get_db()` and the `users` table to already exist, which they do.
